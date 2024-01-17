@@ -17,6 +17,14 @@ pipeline{
             sh 'mvn clean test compile install package'
             }
         }
-       
+       stage('upload artifact'){
+        steps{
+            
+            
+            sh 'curl -uadmin:AP5qvDPc1vmhFVY6j7mcEnVkbXc -T \
+            target/bio*.jar \
+            "http://107.23.254.115:8081/artifactory/geoapp/"'
+        }
+       }
 }
 }
