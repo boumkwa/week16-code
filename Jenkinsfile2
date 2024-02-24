@@ -11,7 +11,7 @@ pipeline{
                 //  sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=boumkwa_week16-code'
                 sh 'mvn sonar:sonar'
 
-                    sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=boumkwa_week16-code'
+                sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=boumkwa_week16-code'
             }
             }
     }
